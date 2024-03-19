@@ -108,7 +108,7 @@ function generateInvoiceContent() {
     for (const productId in cart) {
         const item = cart[productId];
         const itemTotalPrice = item.quantity * item.price;
-        invoiceContent += `<p>เมนูที่ ${productId}: ${item.quantity} x $${item.price} = $${itemTotalPrice}</p>`;
+        invoiceContent += `<p> เมนู: ${productId}: ${item.quantity} x $${item.price} = $${itemTotalPrice}</p>`;
     }
 
     const totalPrice = calculateTotalPrice();
